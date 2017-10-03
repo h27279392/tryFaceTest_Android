@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/R1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+    tools:context="com.example.topic_test.Mod" >
+
+    <RelativeLayout
+        android:id="@+id/mod_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#A040A030" >
+
+        <TextView
+            android:id="@+id/mod_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text=". . . . . . 請選擇面試模式"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mod_top"
+        android:alpha="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iseverybg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mod_top"
+        android:layout_centerHorizontal="true"
+        android:background="#90101010"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/btn_practice"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_weight="5"
+                android:background="@drawable/btn_style_mod1"
+                android:onClick="goPractice"
+                android:text="Practice   Mode"
+                android:textColor="#444444"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_godlike"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_weight="5"
+                android:background="@drawable/btn_style_mod2"
+                android:onClick="goGodLike"
+                android:text="Combat    Mode"
+                android:textColor="#EEEEEE"
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>

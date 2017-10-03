@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitem_is_every" >
+
+    <TextView
+        android:id="@+id/isname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+        android:textColor="#B0000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/istext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/isname"
+        android:layout_marginTop="5dp"
+        android:text="name"
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+        android:textStyle="normal"
+        android:typeface="monospace" />
+
+    <ProgressBar
+        android:id="@+id/new_gogo"
+        style="@style/animStyle"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:indeterminateBehavior="repeat"
+        android:visibility="gone" />
+
+</RelativeLayout>

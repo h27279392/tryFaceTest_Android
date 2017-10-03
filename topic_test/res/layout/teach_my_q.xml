@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.topic_test.Teach_myQ" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#408030" >
+
+        <TextView
+            android:id="@+id/text_path"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.4"
+            android:gravity="center|left"
+            android:text="面試題庫"
+            android:textColor="#DDDDDD"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_style_mod1"
+            android:onClick="add_Q"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_av_upload" />
+
+    </LinearLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/teach_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+<LinearLayout
+    android:id="@+id/video_boxT"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <ImageButton
+        android:id="@+id/close_buttonT"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#00FFFFFF"
+        android:onClick="onClickClose"
+        android:src="@android:drawable/ic_delete" />
+
+   <FrameLayout
+      android:id="@+id/youtube_viewT"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+</LinearLayout>
+</RelativeLayout>

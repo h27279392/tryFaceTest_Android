@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="lib" path="D:/adt-bundle-windows-x86_64-20140702/sdk/extras/google/google-play-services/libproject/google-play-services_lib/libs/google-play-services.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/google-api-client-1.20.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/google-api-client-android-1.15.0-rc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/google-api-services-youtube-v3-rev151-1.20.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/google-http-client-1.17.0-rc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/google-http-client-android-1.13.1-beta.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/google-http-client-gson-1.13.1-beta.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/gson-1.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/guava-jdk5-13.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/library-1.0.19.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/topic_lib/url_lib/libs/YouTubeAndroidPlayerApi.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

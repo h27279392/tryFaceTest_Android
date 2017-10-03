@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@drawable/listitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listitem"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/istime"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            android:id="@+id/istext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="TextView"
+            android:textColor="#DDFFFFFF"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp" >
+
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/video_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/dropshadow"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/no_thumbnail" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/isname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp"
+        android:text="TextView"
+        android:textColor="#DDFFFFFF"
+        android:textSize="23sp" />
+
+    <ProgressBar
+        android:id="@+id/is_new"
+        style="@style/animStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/isname"
+        android:minHeight="15dp"
+        android:minWidth="30dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/istime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/isname"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="14dp"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textColor="#DDFFFFFF"
+        android:textSize="15sp" />
+
+</RelativeLayout>

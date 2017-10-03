@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@drawable/listitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitem"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/isname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:text="Q："
+                android:textColor="#DDFFFFFF"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/isans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="Ans："
+                android:textColor="#DDFF5555"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/video_image_Q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/dropshadow"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/no_thumbnail" />
+
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/video_image_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/dropshadow"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/no_thumbnail" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/istime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="TextView"
+            android:textColor="#DDFFFFFF"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/is_new"
+        style="@style/animStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:minHeight="15dp"
+        android:minWidth="30dp"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Relativedftgshout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear_Q"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/txt_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Quest"
+                android:textColor="#A0F0F0F0"
+                android:textSize="23sp"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/youtube_fragment_godlike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_A"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="The Ans"
+                android:textColor="#F0AA443F"
+                android:textSize="23sp"
+                android:visibility="visible" />
+
+            <SurfaceView
+                android:id="@+id/surfaceView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+           
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/playGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/btn_style"
+                android:text="   我準備好了   "
+                android:textAppearance="?android:attr/textAppearanceInverse"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_looklist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/btn_style"
+                android:onClick="go_list"
+                android:text="   實戰紀錄   "
+                android:textAppearance="?android:attr/textAppearanceInverse"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#78AAAAAA"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#CDFFFFFF"
+        android:textSize="300sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

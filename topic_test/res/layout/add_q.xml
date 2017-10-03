@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <requestFocus />
+
+    <requestFocus />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/text_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:text="新題目種類："
+            android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spier1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.7"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="left"
+        android:text="設定新題目："
+        android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="請輸入面試新題目"
+        android:maxLines="5"
+        android:textSize="23sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="#808080" >
+
+        <VideoView
+            android:id="@+id/video_look"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/del_video"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/video_look"
+            android:layout_toEndOf="@+id/video_look"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="del_fk_video"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/image_play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/ic_media_play"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.5"
+        android:text="此題目未添加面試影片"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/image_record"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_camera"
+            android:onClick="Go_Record" />
+
+        <ImageButton
+            android:id="@+id/image_find"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_gallery"
+            android:onClick="look_fk_video" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5000" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_weight="2"
+            android:text="commit" />
+
+    </LinearLayout>
+
+</LinearLayout>
